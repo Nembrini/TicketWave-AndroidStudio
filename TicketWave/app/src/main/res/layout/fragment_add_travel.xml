@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="30dip">
+
+        <TextView
+            android:id="@+id/titolotravell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dip"
+            android:layout_marginTop="45dip"
+            android:fontFamily="@font/sfprobold"
+            android:text="@string/your"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/titolo2travell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="45dip"
+            android:layout_marginEnd="45dip"
+            android:fontFamily="@font/sfprobold"
+            android:text="@string/travel_to"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/useraccountbuttontravel"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/useraccount"
+            android:drawableTint="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardtravel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="120dip"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorPrimary"
+        android:checkable="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:hapticFeedbackEnabled="true"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/colorBackground"
+        app:cardCornerRadius="40dp"
+        style="?attr/materialCardViewFilledStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titolotravel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/add"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/titolo2travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dip"
+                    android:layout_marginEnd="20dip"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/new_travel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/destinationtravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sfprobold"
+                android:hint="@string/destination"
+                android:background="@drawable/editexttravelbackground"
+                android:drawableStart="@drawable/destination"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:textColorHint="#331974"
+                android:autofillHints="" />
+            <EditText
+                android:id="@+id/fromtravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:background="@drawable/editexttravelbackground"
+                android:fontFamily="@font/sfprobold"
+                android:hint="@string/from"
+                android:drawableStart="@drawable/arrowup"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:textColorHint="#331974"
+                android:focusableInTouchMode="false"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/totravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sfprobold"
+                android:hint="@string/to"
+                android:background="@drawable/editexttravelbackground"
+                android:drawableStart="@drawable/arrowdown"
+                android:drawablePadding="10dp"
+                android:padding="15dp"
+                android:textColorHint="#331974"
+                android:focusableInTouchMode="false"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/addbuttontravel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="@string/add"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginBottom="30dip">
+
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dip"
+                android:layout_marginTop="45dip"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/sfprobold"
+                android:text="Welcome!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/useraccountbutton2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/useraccount"
+                android:drawableTint="@color/colorPrimary"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="120dip"
+            android:layout_marginEnd="20dp"
+            android:background="#3F51B5"
+            android:checkable="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="true"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/colorBackground"
+            app:cardCornerRadius="40dp"
+            style="?attr/materialCardViewFilledStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textcard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="@font/sfprobold"
+                        android:text="Your Calendar"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="35sp"
+                        tools:ignore="HardcodedText" />
+
+                <CalendarView
+                    android:id="@+id/calendar_liked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dip"
+            android:checkable="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:hapticFeedbackEnabled="true"
+            android:visibility="visible"
+            style="?attr/materialCardViewFilledStyle">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="20dp">
+
+                    <TextView
+                        android:id="@+id/yourliked"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="@font/sfprobold"
+                        android:text="Your liked"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="35sp"
+                        tools:ignore="HardcodedText" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_main_liked"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

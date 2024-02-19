@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:title="@string/liked_label"
+        android:icon="@drawable/heart"
+        android:id="@+id/liked"
+        />
+
+    <item
+
+        android:title="@string/discover_label"
+        android:icon="@drawable/rocket"
+        android:id="@+id/discover"
+        android:fontFamily="@font/sfpro"/>
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/baseline_airplane_ticket_24"
+        android:title="@string/travel_label"
+        android:fontFamily="@font/sfpro"/>
+
+</menu>

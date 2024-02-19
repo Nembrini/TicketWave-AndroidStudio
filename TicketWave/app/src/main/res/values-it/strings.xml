@@ -1,0 +1,73 @@
+<resources>
+    <!-- Informazioni sull'app -->
+    <string name="app_name">TicketWave</string>
+    <string name="logo_description">Descrizione del logo</string>
+
+    <!-- Prompt -->
+    <string name="email_prompt">Email</string>
+    <string name="password_prompt">Password</string>
+    <string name="name_prompt">Nome</string>
+    <string name="phone_prompt">Numero di telefono</string>
+
+    <!-- Azioni -->
+    <string name="explore">Esplora</string>
+    <string name="sign_in_action">Accedi</string>
+    <string name="create_account_action">Crea un account</string>
+    <string name="register_action">Registrati ora</string>
+
+    <!-- Domande -->
+    <string name="no_account_question">Non hai un account?</string>
+    <string name="have_account_question">Hai già un account?</string>
+
+    <!-- Etichette -->
+    <string name="liked_label">Mi piace</string>
+    <string name="discover_label">Scopri</string>
+    <string name="travel_label">Viaggi</string>
+    <string name="ticketwave_text">Ticketwave</string>
+    <string name="getstarted_label">Inizia Ora!</string>
+
+
+    <!-- Messaggi -->
+    <string name="welcome_message">Ciao,</string>
+    <string name="login_failed_message">Accesso fallito</string>
+    <string name="invalid_password_message">Password non valida</string>
+    <string name="invalid_username_message">Nome utente non valido</string>
+    <string name="landing_page_text">Ride the Wave of Premier Events</string>
+    <string name="event">Evento&#160;</string>
+    <string name="event_name">Nome dell\'evento</string>
+    <string name="details">Dettagli</string>
+    <string name="go">Vai</string>
+    <string name="city_name">Città</string>
+    <string name="imageoftheevent">Immagine</string>
+    <string name="join">Partecipa!</string>
+    <string name="parse">Mostrami gli eventi</string>
+    <string name="your">I tuoi</string>
+    <string name="travels">Viaggi</string>
+    <string name="add">Aggiungi</string>
+    <string name="destination">Destinazione</string>
+    <string name="from_placeholder">Dal %1$s</string>
+    <string name="new_travel">Nuovo viaggio…</string>
+    <string name="travel_to">Viaggia verso…</string>
+    <string name="to_placeholder">Al %1$s</string>
+    <string name="event_date">Data dell\'evento</string>
+    <string name="date">Data:&#160;</string>
+    <string name="location">Luogo:&#160;</string>
+    <string name="genere">Genere:&#160;</string>
+    <string name="from">Da:&#160;</string>
+    <string name="to">To</string>
+    <string name="msgNotFound">Nessun evento trovato per il luogo e data scelti. \\n Riprova con altre combinazioni di dati</string>
+    <string name="surname_prompt">Cognome</string>
+    <string name="age_prompt">Età</string>
+    <string name="error_name">Il nome non può essere vuoto</string>
+    <string name="error_surname">Il cognome non può essere vuoto</string>
+    <string name="error_age">L\'età non può essere vuota</string>
+    <string name="check_login_data_message">Il dato inserito non è valido</string>
+    <string name="error_user_collision_message">E-Mail già in uso</string>
+    <string name="unexpected_error">Errore inaspettato</string>
+    <string name="returnToLogin">Torna al Login</string>
+    <string name="error_login_password_message">Credenziali non valide</string>
+    <string name="error_login_user_message">Utente non esistente</string>
+    <string name="forgotPassword">Password dimenticata?</string>
+    <string name="double_tap_to_like_dislike_an_event">Doppio tap per mettere/togliere Like!</string>
+
+</resources>
